@@ -1,0 +1,87 @@
+/* Reset and Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+h1 {
+    background-color: #3b5f41;
+    color: rgb(204, 184, 184);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    font-size: 2rem;
+}
+
+/* Choices Section */
+#choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    max-width: 90vw;
+}
+
+.choi {
+    text-align: center;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.choi:hover {
+    transform: scale(1.1);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: border 0.3s ease;
+}
+
+img:hover {
+    border: 5px solid black;
+    cursor: pointer;
+}
+
+/* Score Section */
+.gme-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 2rem auto;
+    font-size: 1.5rem;
+}
+
+.user {
+    color: rgb(0, 150, 20);
+}
+
+.bot {
+    color: red;
+}
+
+/* Play Button */
+#play-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+
+
+#play:hover {
+    background-color: rgb(35, 100, 80);
+}
