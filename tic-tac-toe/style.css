@@ -73,20 +73,53 @@ h1{
     height:100vmin;
 }
 @media (max-width: 480px) {
-    .container{
-        height:50px;
-        width:400px;
-        position:relative;
-        top:150px;
-
-}
-   #reset {
-    position:relative;
-    top:500px;
+    .container {
+        height: auto;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem; /* ✅ Adds spacing between elements for better readability */
     }
-.msg-container{
-    
-    height:auto;
-}
 
+    #game {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 85vw; /* ✅ Keeps the game board responsive */
+        height: 85vw; /* ✅ Ensures a perfect square */
+        gap: 0.8rem; /* ✅ Increases spacing slightly for better touch interaction */
+        padding: 5px; /* ✅ Adds a little padding for a clean look */
+    }
+
+    .play {
+        font-size: 2.5rem; /* ✅ Increases font size for better visibility */
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        background-color: rgb(230, 245, 207); /* ✅ Softer color for better contrast */
+        transition: all 0.2s ease-in-out; /* ✅ Smooth transition for better interaction */
+    }
+
+    .play:active {
+        background-color: rgb(180, 218, 157); /* ✅ Subtle effect when a button is pressed */
+        transform: scale(0.95); /* ✅ Adds a slight click effect */
+    }
+
+    #reset, #ngb {
+        margin-top: 15px;
+        font-size: 1rem;
+        padding: 14px;
+        border-radius: 12px;
+        background-color: #333; /* ✅ Darker background for better contrast */
+        color: #fff;
+        font-weight: bold;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #reset:hover, #ngb:hover {
+        background-color: #555; /* ✅ Slight hover effect for buttons */
+    }
 }
