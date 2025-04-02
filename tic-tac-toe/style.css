@@ -76,7 +76,6 @@ h1{
     .container {
         height: auto;
         width: 100%;
-        padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -85,13 +84,14 @@ h1{
     }
 
     #game {
+padding-top:150px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         width: 85vw; /* ✅ Keeps the game board responsive */
         height: 85vw; /* ✅ Ensures a perfect square */
         gap: 0.8rem; /* ✅ Increases spacing slightly for better touch interaction */
-        padding: 5px; /* ✅ Adds a little padding for a clean look */
+        /* ✅ Adds a little padding for a clean look */
     }
 
     .play {
@@ -123,3 +123,4 @@ h1{
         background-color: #555; /* ✅ Slight hover effect for buttons */
     }
 }
+
