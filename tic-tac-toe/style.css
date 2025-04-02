@@ -72,19 +72,21 @@ h1{
 .player-input{
     height:100vmin;
 }
-@media (max-width: 400px) {
-    #game {
-        gap: 5px;
-    }
+@media (max-width: 480px) {
+    .container{
+        height:50px;
+        width:400px;
+        position:relative;
+        top:150px;
 
-    .play {
-        width: 70px;
-        height: 70px;
-        font-size: 1.5rem;
+}
+   #reset {
+    position:relative;
+    top:500px;
     }
+.msg-container{
+    
+    height:auto;
+}
 
-    input, button {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
 }
